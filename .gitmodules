@@ -1,0 +1,4 @@
+[submodule "themes/hugo-material-catppuccin"]
+	path = themes/hugo-material-catppuccin
+	url = https://github.com/emmaexe/hugo-material-catppuccin.git
+	branch = main

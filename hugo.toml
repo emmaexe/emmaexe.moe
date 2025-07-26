@@ -1,0 +1,60 @@
+baseURL = 'https://www.emmaexe.moe/'
+languageCode = 'en-us'
+title = "Emma's box"
+theme = ['hugo-material-catppuccin']
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+    series = "series"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)']]
+    [markup.highlight]
+        anchorLineNos = true
+        codeFences = true
+        guessSyntax = true
+        hl_inline = false
+        lineNos = true
+        lineNoStart = 1
+        lineNumbersInTable = true
+        noClasses = true
+        noHl = false
+        style = 'catppuccin-macchiato'
+        tabWidth = 4
+
+[params]
+    math = true
+    [params.settings]
+        icon = '/favicon.ico'
+        logo = '/favicon.svg'
+    [params.giscus]
+        repo = "emmaexe/emmaexe.moe"
+        repoID = "R_kgDONGO4Hg"
+        category = "Comments"
+        categoryID = "DIC_kwDONGO4Hs4Cjtwv"
+        mapping = "pathname"
+        strict = "0"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "top"
+        theme = "transparent_dark"
+        lang = "en"
+        loading = "lazy"
+    [params.lanyard]
+        discordId = "299265668522442752"
+        enablePicture = true
+        enableName = true
+        enableStatus = true
